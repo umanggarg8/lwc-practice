@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="Parent Component">
+        <div>This is the Parent Component</div> 
+        <div>{label.myLabel}</div>
+        <button type="button" title="Click Me" onclick={showFullNameInChild}>Click Me</button>
+     </lightning-card>
+     <c-child-component firstname= 'Umang' lastname= 'Garg'></c-child-component>
+</template>

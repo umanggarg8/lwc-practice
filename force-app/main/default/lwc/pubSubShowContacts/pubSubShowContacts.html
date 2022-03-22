@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Pubsub show List" icon-name="custom:custom30">
+        <div class="slds-m-around_medium" onselectchange={handleAccountSelect}>
+            <template if:true={accounts.data}>
+                <template for:each={accounts.data} for:item="account">
+                    <c-child-to-parent-bubble_child
+                        key={account.Id}
+                        account={account}
+                    ></c-child-to-parent-bubble_child>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+    
+</template>

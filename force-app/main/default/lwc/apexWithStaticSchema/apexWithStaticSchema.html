@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Single Contact (Static Schema)">
+        <template if:true={contact.data}>
+                <p>{name}</p>
+                <p>{title}</p>
+                <p>
+                    <lightning-formatted-email
+                        value={email}
+                    ></lightning-formatted-email>
+                </p>
+        </template>
+    </lightning-card>
+</template>

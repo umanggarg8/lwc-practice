@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title ="Delete Record Using LDS">
+        <template if:true={accounts}>
+            <template for:each={accounts} for:item="account">
+                <lightning-layout key={account.Id}>
+                    <lightning-layout-item>{account.Name}</lightning-layout-item>
+                    <lightning-layout-item>
+                        <lightning-button-icon
+                           icon-name="utility:delete"
+                           onclick={deleteAccount} 
+                           data-recordid={account.Id}>
+                        </lightning-button-icon>
+                    </lightning-layout-item>
+                </lightning-layout>    
+            </template>         
+           </template>
+                   
+    </lightning-card>   
+</template>

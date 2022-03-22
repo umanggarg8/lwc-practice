@@ -1,0 +1,18 @@
+<template>
+    <lightning-card
+    title="getAccountRecordByUIAPIStatic"
+    icon-name="standard:account"
+>
+
+<template if:true={account.data}>
+  {name}
+  {industry}
+  <p>
+    <lightning-formatted-phone
+        value={phone}
+    ></lightning-formatted-phone>
+</p>
+</template>
+</lightning-card>
+    
+</template>

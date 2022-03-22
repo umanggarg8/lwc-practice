@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Search Account on Button Click (Wired)">
+        <div>
+        <lightning-input type="text" label="Enter Account" value={searchAccount} onchange={getText1}></lightning-input>  
+        <lightning-button label="View Accounts" onclick ={fetchAccounts}></lightning-button>          
+        </div>
+        <div if:true={showAccounts}>
+        <div for:each={accounts.data} for:item="acc" key={acc.id}>
+           <li>{acc.Name}</li>
+        </div></div>
+    </lightning-card>  
+
+    <lightning-card title="Search Account on Button Click (Imperative)">
+        <div>
+        <lightning-input type="text" label="Enter Account" value={searchAccount1} onchange={getText}></lightning-input>            
+        <lightning-button label="View Accounts" onclick ={fetchAccounts1}></lightning-button>          
+    
+    </div>
+    <div if:true={showAccounts1}>
+        <div for:each={lstAccounts} for:item="acc" key={acc.id}>
+           <li>{acc.Name}</li>
+        </div>
+    </div>
+    </lightning-card> 
+    
+</template>

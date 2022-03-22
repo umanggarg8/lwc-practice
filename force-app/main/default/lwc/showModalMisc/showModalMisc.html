@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Show Modal">
+        <lightning-input label="Header" value={header} onchange={handleHeader}></lightning-input>
+        <lightning-input label="Content" value={content} onchange={handleContent}></lightning-input>   
+     <lightning-button label="Show Modal" onclick={showModal}></lightning-button>
+
+     <c-modal header={header}>
+         {content}
+     <div slot="footer">
+         <lightning-button
+             label="Cancel"
+             variant="neutral"
+             onclick={handleCancelModal}
+         ></lightning-button>
+         <lightning-button
+             label="Close"
+             variant="brand"
+             onclick={handleCloseModal}
+         ></lightning-button>
+     </div>
+ </c-modal>
+     </lightning-card>
+    
+</template>

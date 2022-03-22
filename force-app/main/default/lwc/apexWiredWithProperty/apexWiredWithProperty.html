@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="List of Contact(Wired to Property)">
+      <template if:true={lstOfcontacts.data}>
+      <template for:each={lstOfcontacts.data} for:item="con">
+        <div key={con.Id}>
+            {con.Name}
+        </div>
+      </template></template>
+    </lightning-card>
+    
+</template>

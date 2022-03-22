@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Update Record Using Lds">
+            <template if:true={account.data}>
+                <lightning-input label="Id" disabled value={account.data.Id} data-field="Id"></lightning-input>
+                <lightning-input label="Name" value={account.data.Name} data-field="Name" onchange={handleChange} class="slds-m-bottom_x-small"></lightning-input>
+                <lightning-input label="Phone" value={account.data.Phone} data-field="Phone" onchange={handleChange} class="slds-m-bottom_x-small"></lightning-input>
+                <lightning-button label="Update Contact" variant="brand" onclick={updateAccount} disabled={disabled}></lightning-button>
+            </template>
+    </lightning-card>
+</template>

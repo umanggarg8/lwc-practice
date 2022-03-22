@@ -1,0 +1,10 @@
+<template>
+<lightning-card title="CreateRecord Using LDS">
+
+ <lightning-input label="Id" disabled value={accountId}></lightning-input>
+
+ <lightning-input label="Name" value={accName} onchange={handleName}></lightning-input>
+ <lightning-input label="Phone" value={accPhone} onchange={handlePhone}></lightning-input>
+ <lightning-button label="Create Account" onclick={handleClick}> </lightning-button>
+</lightning-card>    
+</template>

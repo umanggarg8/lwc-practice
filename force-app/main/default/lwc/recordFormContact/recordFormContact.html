@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title='Create Contact'>
+        <lightning-record-form object-api-name="Contact" layout-type="Full">
+        </lightning-record-form>
+    
+</lightning-card>    
+<lightning-card title='Create Contact'>
+    <lightning-record-edit-form object-api-name="Contact" onsuccess ={handleSubmit} >
+        <lightning-input-field field-name={contactFirstName}></lightning-input-field>
+        <lightning-input-field field-name={contactLastName}></lightning-input-field>
+        <lightning-input-field field-name={contactPhone}></lightning-input-field>
+        <lightning-input-field field-name={contactEmail}></lightning-input-field>
+        <lightning-button type="submit" label="Save"></lightning-button>
+    </lightning-record-edit-form>
+</lightning-card>
+</template>

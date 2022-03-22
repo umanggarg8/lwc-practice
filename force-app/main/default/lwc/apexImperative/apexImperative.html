@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="List of Contacts (Imperative)">
+      <lightning-button label="Load Contacts" onclick={handleContacts}></lightning-button>
+      <template if:true={contacts}>
+          <template for:each={contacts} for:item="con">
+              <div key={con.Id}>
+                  {con.Name}
+              </div>
+          </template>
+      </template>
+
+    </lightning-card>
+</template>

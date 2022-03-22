@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Cotact List">
+        <template if:true={contacts.data}>
+            <!--<lightning-datatable
+                key-field="Id"
+                data={contacts.data}
+                show-row-number-column
+                row-number-offset={rowOffset}
+                columns={columns}
+            >
+           </lightning-datatable>-->
+    <c-do-pagination
+	records={contacts.data}
+	show-table="true"
+	columns={columns}
+	recordsperpage="8"
+	onactions={handleRowActions}
+	onpagination={handlePagination}
+>
+</c-do-pagination>
+           
+        </template>
+        
+
+        <template if:true={errors}>
+            <p>{errors}</p>
+        </template>
+        
+    </lightning-card>  
+</template>

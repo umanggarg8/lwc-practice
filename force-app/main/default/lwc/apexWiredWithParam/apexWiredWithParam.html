@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="List of Contact (Wired with Param)">
+       <lightning-input label="Search" type="search" value={searchParam} onchange={handleChange}></lightning-input>
+       <template if:true={contacts.data}>
+        <template for:each={contacts.data} for:item="con">
+            <div key={con.Id}>{con.Name}</div>
+        </template>
+
+       </template>
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,30 @@
+lightning-input,
+c-account-tile {
+    position: relative;
+    border: solid 1px  #006DCC;
+    border-radius: 4px;
+    display: block;
+    padding: 2px;
+}
+
+c-account-tile {
+    margin: 1px 0;
+}
+
+lightning-input:before,
+c-account-tile:before {
+    color:  #006DCC;
+    position: absolute;
+    top: -9px;
+    left: 4px;
+    background-color: #ffffff;
+    padding: 0 4px;
+}
+
+lightning-input:before {
+    content: 'lightning-input';
+}
+
+c-account-tile:before {
+    content: 'c-account-tile';
+}

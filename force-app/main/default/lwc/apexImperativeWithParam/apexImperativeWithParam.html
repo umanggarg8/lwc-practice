@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="List of Contact (Imperative with Param)">
+        <lightning-input label="Search" type="search" value={searchParam} onchange={handleChange}></lightning-input>
+        <lightning-button label="Search" onclick={handleClick}></lightning-button>
+
+        <template if:true={contacts}>
+         <template for:each={contacts} for:item="con">
+             <div key={con.Id}>{con.Name}</div>
+         </template>
+ 
+        </template>
+     </lightning-card>
+    
+</template>

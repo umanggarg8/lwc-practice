@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Hello Conditional">
+        <lightning-input label ="Show details" type="checkbox" onchange={handlevalue}></lightning-input>
+    <template if:true={booleanValue}>
+        These are the details!!
+    </template>
+    <template if:false={booleanValue}>
+        No Details Available!!
+    </template>
+
+<template for:each={contacts} for:item="contact">
+   <div key={contact.Id}> {contact.Name}
+    {contact.Title} </div>
+</template>
+</lightning-card>
+
+</template>

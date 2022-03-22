@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Search Account on key up (Wired)">
+        <div>
+        <lightning-input type="text" label="Enter Account" value={searchAccount} onchange ={fetchAccounts}></lightning-input>            
+        </div>
+        <div for:each={accounts.data} for:item="acc" key={acc.id}>
+           <li>{acc.Name}</li>
+        </div>
+    </lightning-card>  
+
+    <lightning-card title="Search Account on key up (Imperative)">
+        <div>
+        <lightning-input type="text" label="Enter Account" value={searchAccount1} onchange ={fetchAccounts1}></lightning-input>            
+        </div>
+        <div for:each={lstAccounts} for:item="acc" key={acc.id}>
+           <li>{acc.Name}</li>
+        </div>
+    </lightning-card> 
+</template>

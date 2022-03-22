@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="AccountComposition Iteration">
+        <div class="slds-m-around_medium">
+            <template for:each={accounts} for:item="account">
+                <c-account-tile
+                    key={account.Id}
+                    account={account}
+                ></c-account-tile>
+            </template>
+        </div>
+
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,17 @@
+c-account-tile {
+    position: relative;
+    border: solid 1px #006DCC;
+    border-radius: 4px;
+    display: block;
+    padding: 0 2px;
+}
+
+c-account-tile:before {
+    content: 'c-account-tile';
+    color: #006DCC;
+    position: absolute;
+    top: -9px;
+    left: 4px;
+    background-color: #ffffff;
+    padding: 0 4px;
+}

@@ -1,0 +1,20 @@
+<template>
+    <lightning-card
+    title="getAccountRecordByUIAPIDynamic"
+    icon-name="standard:account"
+>
+
+<template if:true={account.data}>
+  {name}
+  {industry}
+  <p>
+    <lightning-formatted-phone
+        value={phone}
+    ></lightning-formatted-phone>
+</p>
+</template>
+<template if:true={account.error}>
+    {account.error}
+</template>
+</lightning-card>
+</template>

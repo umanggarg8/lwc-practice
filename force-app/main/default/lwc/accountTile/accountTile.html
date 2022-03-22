@@ -1,0 +1,17 @@
+<template>
+    <template if:true={account}>
+      <lightning-layout vertical-align="center">
+          <lightning-layout-item> <img src={account.Picture__c} alt="Profile photo" /></lightning-layout-item>
+          <lightning-layout-item padding="around-small">
+            <p>{account.Name}</p>
+            <p>{account.Industry}</p>
+            <p>
+                <lightning-formatted-phone
+                    value={account.Phone}
+                ></lightning-formatted-phone>
+            </p>
+        </lightning-layout-item>
+      </lightning-layout>
+    </template>
+    <template if:false={account}><p>No contact data available.</p></template>
+</template>

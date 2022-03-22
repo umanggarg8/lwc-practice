@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Show Toast">
+      <lightning-input label="Title" value={title} onchange={handleTitle}></lightning-input>
+      <lightning-input label="Message" value={message} onchange={handleMessage}></lightning-input>
+      <lightning-combobox
+      label="Variant"
+      value={variant}
+      onchange={handleVariant}
+      options={variantOptions}>
+      </lightning-combobox>     
+   <lightning-button label="Show Toast" onclick={showNotification}></lightning-button>
+
+    </lightning-card>
+    
+</template>

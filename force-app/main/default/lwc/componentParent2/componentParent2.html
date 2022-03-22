@@ -1,0 +1,6 @@
+<template>
+    <lightning-card title="Parent Component">
+        <div if:true={hasEventOccured}>{showMessage}</div>
+        <c-component-child2 oncusevent={handlePress}></c-component-child2>
+    </lightning-card>
+</template>

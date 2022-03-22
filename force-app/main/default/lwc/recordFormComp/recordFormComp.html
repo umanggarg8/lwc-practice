@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title='Create Account'>
+                <lightning-record-edit-form object-api-name="Account" onsuccess ={handleSubmit} >
+                    <lightning-input-field field-name={accountName}></lightning-input-field>
+                    <lightning-input-field field-name={accountRevenue}></lightning-input-field>
+                    <lightning-input-field field-name={accountIndustry}></lightning-input-field>
+                    <lightning-input-field field-name={accountAddress}></lightning-input-field>
+                    <lightning-button type="submit" label="click here"></lightning-button>
+                </lightning-record-edit-form>
+            
+    </lightning-card>    
+    <lightning-card title='View Account'>
+                <lightning-record-view-form object-api-name="Account" record-id={recordId}>
+                    <lightning-output-field field-name={accountName}></lightning-output-field>
+                    <lightning-output-field field-name={accountRevenue}></lightning-output-field>
+                    <lightning-output-field field-name={accountIndustry}></lightning-output-field>
+                    <lightning-output-field field-name={accountAddress}></lightning-output-field>
+
+                </lightning-record-view-form>
+    </lightning-card>
+    
+</template>
