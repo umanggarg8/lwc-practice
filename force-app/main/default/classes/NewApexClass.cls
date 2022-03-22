@@ -4,4 +4,6 @@ public with sharing class NewApexClass {
   // added this from new branch - develop2  tyu
   //for develop branch to test
     }
+
+    public void next(){}
 }
